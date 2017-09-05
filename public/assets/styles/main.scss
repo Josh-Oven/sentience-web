@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+$retro: 'Press Start 2P';
+
+:root{
+  --neon-text-white:
+      0 0 5px white,
+      0 0 10px white,
+      0 0 20px white,
+      0 0 40px white,
+      0 0 80px white,
+      0 0 90px white,
+      0 0 100px white,
+      0 0 150px white;;
+
+  --neon-text-violet:
+      0 0 5px violet,
+      0 0 10px violet,
+      0 0 20px violet,
+      0 0 40px violet,
+      0 0 80px violet,
+      0 0 90px violet,
+      0 0 100px violet,
+      0 0 150px violet;;
+
+  --neon-box-yellow:
+      0 0 5px yellow,
+      0 0 10px yellow,
+      0 0 20px yellow,
+      0 0 40px yellow,
+      0 0 80px yellow,
+      0 0 90px yellow,
+      0 0 10px yellow,
+      0 0 10px yellow;;
+
+  --low-neon-violet:
+      0 0 20px violet,
+      0 0 1px violet,
+      0 0 1px violet,
+      0 0 1px violet,
+      0 0 1px violet,
+      0 0 1px violet,
+      0 0px 1px violet,
+      0 0px 1px violet;;
+
+  --low-neon-grey:
+      0 0 20px grey,
+      0 0 1px grey,
+      0 0 1px grey,
+      0 0 1px grey,
+      0 0 1px grey,
+      0 0 1px grey,
+      0 0px 1px grey,
+      0 0px 1px grey;;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grow-container {
+  width: 100%;
+  height: 100%;
+  animation: page-grow 1s;
+  margin: auto;
+  // border: 1px solid white;
+}
+
+.page-title-container {
+  // margin: auto;
+  // width: auto;
+  // border: 1px solid red;
+
+  .page-title {
+    font-family: $retro;
+    font-size: 30px;
+    color: violet;
+    float: right;
+  }
+}
+
+#info-menu {
+  // display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  top: -250px;
+  right: -350px;
+  height: 350px;
+  width: 300px;
+  box-shadow: var(--low-neon-grey);
+  // border-left: 4px solidgrey
+  background: #d3d3d3;
+}
+
+.info-menu-text-container {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  // border: 1px solid black;
+}
+
+.info-menu-text {
+  font-family: $retro;
+  font-size: 12px;
+  // letter-spacing: 2px;
+  line-height: 15px;
+  color: black;
+  margin: 0 auto;
+}
+
+.neon-box {
+  box-shadow:
+    0 0 5px yellow,
+    0 0 10px yellow,
+    0 0 20px yellow,
+    0 0 40px yellow,
+    0 0 80px yellow,
+    0 0 90px yellow,
+    0 0 10px yellow,
+    0 0 10px yellow;
+}
+
+.neon-box-blue {
+  box-shadow:
+    0 0 5px #3E65C0,
+    0 0 10px #3E65C0,
+    0 0 20px #3E65C0,
+    0 0 40px #3E65C0,
+    0 0 80px #3E65C0,
+    0 0 90px #3E65C0,
+    0 0 10px #3E65C0,
+    0 0 10px #3E65C0;
+}
+
+.neon-star {
+  box-shadow:
+    0 0 5px white,
+    0 0 2px white,
+    0 0 20px white,
+    0 0 10px white,
+    0 0 10px white,
+    0 0 10px white,
+    0 0 5px white,
+    0 0 5px white;
+}
+
+.neon-star-blue {
+  box-shadow:
+    0 0 5px #72bcd4,
+    0 0 2px #72bcd4,
+    0 0 20px #72bcd4,
+    0 0 10px #72bcd4,
+    0 0 10px #72bcd4,
+    0 0 10px #72bcd4,
+    0 0 5px #72bcd4,
+    0 0 5px #72bcd4;
+}
+
+@keyframes neon-flicker {
+    0%   {text-shadow: var(--neon-text-violet); color: violet}
+    25%  {text-shadow: var(--neon-text-white); color: white}
+    24%   {text-shadow: var(--neon-text-violet); color: violet}
+    26%  {text-shadow: var(--neon-text-violet); color: violet}
+    27%  {text-shadow: var(--neon-text-white); color: white}
+    28% {text-shadow: var(--neon-text-violet); color: violet}
+    29% {text-shadow: var(--neon-text-white); color: white}
+    30% {text-shadow: var(--neon-text-violet); color: violet}
+    49% {text-shadow: var(--neon-text-violet); color: violet}
+    50% {text-shadow: var(--neon-text-white); color: white}
+    51%  {text-shadow: var(--neon-text-violet); color: violet}
+    54% {text-shadow: var(--neon-text-white); color: white}
+    55% {text-shadow: var(--neon-text-violet); color: violet}
+    99% {text-shadow: var(--neon-text-violet); color: violet}
+    100% {text-shadow: var(--neon-text-white); color: white}
+}
+
+@keyframes page-grow {
+  0% {width: 0%; height: 0%}
+  100% {width: default; height: default}
+}
+
+@keyframes text-grow {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes info-menu-open {
+  0% {width: 0%; height: 0%; background: none}
+  100% {width: default; height: default}
+}
+
+@keyframes info-menu-close {
+  0% {width: default; height: default}
+  100% {width: 1%; height: 1%}
+}
+
+@keyframes info-menu-text-container-open {
+  0% {height: 0%}
+  100% {height: 95%}
+}
+
+@keyframes spaceship-enter {
+  0% {right: -20%}
+  50% {right: -20%}
+  100% {right: 45%}
+}
+
+@keyframes spaceship-shake {
+  0% {margin: 2px 5px 0 0}
+  10% {margin: 5px 10px 0 0}
+  20% {margin: 2px 5px 10px 0}
+  30% {margin: 0px 0px 15px 15px}
+  40% {margin: 0px 15px 15px 0}
+  50% {margin: 8px 0 0 10px}
+  60% {margin: 6px 0 0 8px}
+  70% {margin: 2px 0 0 4px}
+  80% {margin: 0 5px 5px 0}
+  90% {margin: 2px 5px 0 0}
+  100% {margin: 2px 5px 0 0}
+}
+
+@keyframes leg1-spin {
+  0% {top: 10px}
+  50% {top: 74px}
+  51% {top: 75px}
+  100% {top: 10px; z-index: 1}
+}
+
+@keyframes leg2-spin {
+  0% {top: 75px}
+  50% {top: 11px; z-index: 1}
+  51% {top: 10px; z-index: 3}
+  100% {top: 75px; z-index: 3}
+}
+
+@keyframes flame-shake {
+    0%{margin: 15px 0 0 25px;}
+    15%{margin: 15px 0 0 20px;}
+    30%{margin: 17px 0 0 26px;}
+    45%{margin: 15px 0 0 28px;}
+    60%{margin: 16px 0 10px 21px;}
+    75%{margin: 15px 0 0 25px;}
+    90%{margin: 14px 0 5px 24px;}
+    100%{margin: 16px 0 0 25px;}
+}
+
+ // star animations
+
+@keyframes passing-star-1s {
+  0% {left: -165px}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-2s {
+  0% {left: -165px}
+  25% {left: -165px}
+  50% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-3s {
+  0% {left: -165px}
+  20% {left: -165px}
+  40% {left: -165px}
+  60% {left: -165px}
+  80% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-4s {
+  0% {left: -165px}
+  14% {left: -165px}
+  28% {left: -165px}
+  42% {left: -165px}
+  56% {left: -165px}
+  70% {left: -165px}
+  84% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-5s {
+  0% {left: -165px}
+  10% {left: -165px}
+  20% {left: -165px}
+  30% {left: -165px}
+  40% {left: -165px}
+  50% {left: -165px}
+  60% {left: -165px}
+  70% {left: -165px}
+  80% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-6s {
+  0% {left: -165px}
+  9% {left: -165px}
+  18% {left: -165px}
+  27% {left: -165px}
+  36% {left: -165px}
+  45% {left: -165px}
+  54% {left: -165px}
+  63% {left: -165px}
+  72% {left: -165px}
+  81% {left: -165px}
+  90% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes passing-star-7s {
+  0% {left: -165px}
+  7% {left: -165px}
+  14% {left: -165px}
+  21% {left: -165px}
+  28% {left: -165px}
+  35% {left: -165px}
+  42% {left: -165px}
+  49% {left: -165px}
+  56% {left: -165px}
+  63% {left: -165px}
+  70% {left: -165px}
+  77% {left: -165px}
+  84% {left: 110%}
+  100% {left: 110%}
+}
+
+// end star animations
+
+@keyframes pride-color-swap {
+  14% {color: 'red'}
+  28% {color: 'orange'}
+  42% {color: 'yellow'}
+  56% {color: 'green'}
+  70% {color: 'blue'}
+  84% {color: 'indigo'}
+  100% {color: 'violet'}
+}
