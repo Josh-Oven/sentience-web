@@ -74,6 +74,14 @@ $paragraph: 'Quicksand';
     // background: #c2c2c9;
     box-shadow: 0 0 4px 2px #19191c;
 
+    @media (max-width: 1300px){
+      width: 1000px;
+    }
+
+    @media (max-width: 1100px){
+      width: 90%;
+    }
+
     .home-article-container {
       width: 98%;
       height: 550px;
@@ -132,27 +140,26 @@ $paragraph: 'Quicksand';
       justify-content: space-around;
       align-items: center;
       margin: auto;
-      // margin-bottom: 10px;
-      // background: #454853;
       background: #313440;
-      // background: linear-gradient(to top, #313440, #17181e 99%);
+
+      @media (max-width: 1300px){
+        padding: 10px 0 10px 0;
+        height: auto;
+        flex-wrap: wrap;
+      }
     }
 
     .home-gif-container {
-      width: 499px;
+      width: 500px;
       height: 280px;
       overflow: hidden;
       // background: #6f6f72;
       display: inherit;
       align-items: center;
-      justify-content: space-around;
-      // border-radius: 3px;
-
-      // img
     }
 
     .home-text-container {
-      width: 499px;
+      width: 500px;
       height: auto;
       background: #262831;
       // text-align: center;
@@ -168,6 +175,18 @@ $paragraph: 'Quicksand';
         color: white;
       }
     }
+
+    @media (max-width: 1300px){
+      .home-text-container {
+        height: auto;
+        margin: 10px;
+      }
+
+      .home-gif-container {
+        margin: 10px;
+      }
+    }
+
   }
 
   // .footer {

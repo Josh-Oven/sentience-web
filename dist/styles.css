@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400");
 @import url("https://fonts.googleapis.com/css?family=Roboto:500");
@@ -51,6 +52,12 @@
     margin: auto;
     background: #dfdfe5;
     box-shadow: 0 0 4px 2px #19191c; }
+    @media (max-width: 1300px) {
+      .main-home .main-home-inner-container {
+        width: 1000px; } }
+    @media (max-width: 1100px) {
+      .main-home .main-home-inner-container {
+        width: 90%; } }
     .main-home .main-home-inner-container .home-article-container {
       width: 98%;
       height: 550px;
@@ -93,15 +100,19 @@
       align-items: center;
       margin: auto;
       background: #313440; }
+      @media (max-width: 1300px) {
+        .main-home .main-home-inner-container .home-gif-text-container {
+          padding: 10px 0 10px 0;
+          height: auto;
+          flex-wrap: wrap; } }
     .main-home .main-home-inner-container .home-gif-container {
-      width: 499px;
+      width: 500px;
       height: 280px;
       overflow: hidden;
       display: inherit;
-      align-items: center;
-      justify-content: space-around; }
+      align-items: center; }
     .main-home .main-home-inner-container .home-text-container {
-      width: 499px;
+      width: 500px;
       height: auto;
       background: #262831;
       border-left: 2px solid black;
@@ -111,6 +122,12 @@
         font-size: 18px;
         line-height: 30px;
         color: white; }
+    @media (max-width: 1300px) {
+      .main-home .main-home-inner-container .home-text-container {
+        height: auto;
+        margin: 10px; }
+      .main-home .main-home-inner-container .home-gif-container {
+        margin: 10px; } }
 
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300");
