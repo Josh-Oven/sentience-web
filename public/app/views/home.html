@@ -8,8 +8,47 @@
 
     </div>
 
-    <a href='https://github.com/Josh-Oven/sentience'><button class='header-play-button'><p>Check it out</p></button></a>
+    <a href='https://github.com/Josh-Oven/sentience'>
 
+      <button class='header-play-button' id='header-play-button'>
+        <p>Check it out</p>
+      </button>
+    </a>
+
+  </div>
+
+  <div class='mobile-menu' id='mobile-menu'>
+    <a href='https://github.com/Josh-Oven/sentience'>
+      <div class='menu-link-container'>
+        <p>Check it out</p>
+      </div>
+    </a>
+
+    <a href='https://www.linkedin.com/in/josh-oven/'>
+      <div class='menu-link-container' style='width: auto; margin-left: 179px'>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+    </a>
+
+    <a href='https://github.com/Josh-Oven'>
+      <div class='menu-link-container' style='width: auto; margin-left: 179px'>
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </div>
+    </a>
+  </div>
+
+  <div class='mobile-menu-button' onclick='menuToggle()'>
+    <div class='button-particle-container' style='animation: particle-float1 1.7s infinite; animation-delay: .4s'>
+      <div class='button-particle'></div>
+    </div>
+
+    <div class='button-particle-container' style='animation: particle-float2 1s infinite'>
+      <div class='button-particle'></div>
+    </div>
+
+    <div class='button-particle-container' style='animation: particle-float3 1.3s infinite; animation-delay: .9s'>
+      <div class='button-particle'></div>
+    </div>
   </div>
 
   <div class='main-home-inner-container'>
@@ -24,7 +63,9 @@
 
       <div class='home-article'>
 
-        <p>Words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler.</p>
+        <p>Sentience is a Interactive Novel (Think Marvel comics but with animation and interaction) covering a few different stories im working on. I wont say too much about the stories at the moment, but I will talk about how I want it to function.</p>
+
+        <p>The game will cover content from three different story lines. You'll find a short story as you delve into each chapter. Under each short story you'll find a detailed scene with interactable objects. Each object will give you further insite to the story and world around it. Some objects will even be interactable. You might be able to start a mini game, or change the scene completely to expose the games secrets.</p>
 
       </div>
 
@@ -50,13 +91,17 @@
 
       <div class='home-article-title-container'>
 
-        <p>Adderall is wearing off....</p>
+        <p>How and Why I'm doing it.</p>
 
       </div>
 
       <div class='home-article'>
 
-        <p>Words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler. words and words gotta test the display of this text so that it looks a bit normal. For some reason Atom breaks when i copy and paste any text so here i am righting in my own filler.</p>
+        <p>Sentience is basicaly a practice/passion project for me. I've had this idea for quite some time but havent been able to dedicate enough time to work on it. Well I've now challenged myself to build this game using only (mostly) vanilla languages with my main focus on Javascript and CSS. This gave me the excuse to work on this project for practice rather than just for fun. Using only vanilla languages means no Jquery, Angular functionality (although I am using it for ui-view/ui.router and other general things), SASS (other than nesting) and many other languages/libraries.</p>
+
+        <p><strong>Technologies used so far:</strong></p>
+
+        <p>Angular 1 | Vanilla JS | HTML | CSS | SASS | Gulp/Babel | Electron | Node.js</p>
 
       </div>
     </div>
@@ -111,9 +156,13 @@
   </div>
 
   <div class='footer'>
-
-
-
+    <div class='footer-link-container'>
+      <a href='https://www.linkedin.com/in/josh-oven/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href='https://github.com/Josh-Oven'><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <p>josh.oven.u@gmail.com</p>
   </div>
 
 </main>
+
+<script src='./vanilla-js/home.js'></script>

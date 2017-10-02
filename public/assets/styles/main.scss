@@ -189,9 +189,32 @@ a {
     100% {text-shadow: var(--neon-text-white); color: white}
 }
 
+@keyframes neon-box-flicker {
+    0%   {box-shadow: var(--neon-text-violet); color: violet}
+    25%  {box-shadow: var(--neon-text-white); color: white}
+    24%   {box-shadow: var(--neon-text-violet); color: violet}
+    26%  {box-shadow: var(--neon-text-violet); color: violet}
+    27%  {box-shadow: var(--neon-text-white); color: white}
+    28% {box-shadow: var(--neon-text-violet); color: violet}
+    29% {box-shadow: var(--neon-text-white); color: white}
+    30% {box-shadow: var(--neon-text-violet); color: violet}
+    49% {box-shadow: var(--neon-text-violet); color: violet}
+    50% {box-shadow: var(--neon-text-white); color: white}
+    51%  {box-shadow: var(--neon-text-violet); color: violet}
+    54% {box-shadow: var(--neon-text-white); color: white}
+    55% {box-shadow: var(--neon-text-violet); color: violet}
+    99% {box-shadow: var(--neon-text-violet); color: violet}
+    100% {box-shadow: var(--neon-text-white); color: white}
+}
+
 @keyframes page-grow {
   0% {width: 0%; height: 0%}
   100% {width: default; height: default}
+}
+
+@keyframes shrink {
+  0% {width: 100%; height: 100%}
+  100% {width: 0%; height: 0%}
 }
 
 @keyframes text-grow {
@@ -348,4 +371,28 @@ a {
   70% {color: 'blue'}
   84% {color: 'indigo'}
   100% {color: 'violet'}
+}
+
+@keyframes particle-float1 {
+  0% {top: -15px}
+  25% {padding: 0 5px 0 0}
+  50% {padding: 0 0 0 5px}
+  75% {padding: 0 0 0 0}
+  100% {top: -60px; width: 1px; height: 1px}
+}
+
+@keyframes particle-float2 {
+  0% {top: -15px}
+  25% {padding: 0 0 0 5px}
+  50% {padding: 0 5px 0 0}
+  75% {padding: 0 0 0 0}
+  100% {top: -45px; width: 1px; height: 1px}
+}
+
+@keyframes particle-float3 {
+  0% {top: -15px}
+  25% {padding: 0 5px 0 0}
+  50% {padding: 0 0 0 5px}
+  75% {padding: 0 0 0 0}
+  100% {top: -55px; width: 1px; height: 1px}
 }
